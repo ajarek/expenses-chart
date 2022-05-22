@@ -33,7 +33,7 @@ body {
 }
 .wrapper {
   width: 360px;
-  height: 420px;
+  height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,7 +41,7 @@ body {
 }
 .header {
   width: 100%;
-  height: 80px;
+  height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@ body {
 }
 .main {
   width: 100%;
-  height: 300px;
+  height: 360px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,15 +63,17 @@ body {
 }
 .title {
   width: 100%;
-  padding: 20px;
+ margin-top: 20px;
+
 }
 .chart-container {
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--brown);
   gap: 10px;
+  place-content: center;
 }
 .chart-item {
   height: 170px;
@@ -89,48 +91,14 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: var(--cyan);
+  background: var(--red);
   border-radius: 3px;
   transition: all 0.5s ease;
   cursor: pointer;
 }
-#mon {
-  background: var(--red);
-  height: calc(40%);
-}
-#tue {
-  background: var(--red);
-  height: calc(60%);
-}
-#wed {
+
+.active {
   background: var(--cyan);
-  height: calc(90%);
-}
-#thu {
-  background: var(--red);
-  height: calc(50%);
-}
-#fri {
-  background: var(--red);
-  height: calc(40%);
-}
-#sat {
-  background: var(--red);
-  height: calc(60%);
-}
-#sun {
-  background: var(--red);
-  height: calc(40%);
-}
-#sun:hover,
-#sat:hover,
-#fri:hover,
-#thu:hover,
-#wed:hover,
-#tue:hover,
-#mon:hover {
-  height: 100%;
-  opacity: 0.5;
 }
 .day {
   width: 100%;
@@ -141,9 +109,9 @@ body {
 }
 .footer {
   width: 100%;
-  height: 80px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  
 }
