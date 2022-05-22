@@ -118,7 +118,7 @@ border: solid;
 }
 .modal{
   position: absolute;
-  
+  font-size: 0.9rem;
   left: -20%;
   width: 140%;
   color: var(--orange);
@@ -126,7 +126,28 @@ border: solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px ;
+  padding:5px 5px ;
   z-index: 10;
   border-radius:5px;
+}
+@media screen and (max-width: 600px) {
+  body{
+    padding: 0;
+  }
+ .container{
+   width: 100%;
+ }
+ .modal{
+   font-size: 0.7rem;
+ }
+}
+@media screen and (max-width: 375px) {
+  .container{
+    padding: 0 5px;
+  }
+  .wrapper{
+    width: 100vw;
+    height:100vh;
+    justify-content: space-evenly;
+  }
 }
