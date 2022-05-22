@@ -64,7 +64,6 @@ body {
 .title {
   width: 100%;
  margin-top: 20px;
-
 }
 .chart-container {
   height: 100%;
@@ -113,8 +112,7 @@ border: solid;
   height: 150px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center; 
 }
 .modal{
   position: absolute;
