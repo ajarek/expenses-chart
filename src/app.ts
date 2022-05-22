@@ -1,3 +1,4 @@
+(function(){
 const progress = document.querySelectorAll(".progress") as NodeListOf<HTMLElement>;
 
 async function getData(): Promise<void> {
@@ -36,5 +37,9 @@ function createModal(e:any){
       let element =e.target.parentElement as HTMLElement;
       element.appendChild(modal);
 }
+function init() {
 getData();
 renderModal();
+}
+return init();
+})()
